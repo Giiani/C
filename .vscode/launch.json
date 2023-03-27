@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "i:/Codeo/Cursos/C",
-      "program": "i:/Codeo/Cursos/C/build/Debug/outDebug",
+      "cwd": "i:/Codeo/Cursos/C/Math function",
+      "program": "i:/Codeo/Cursos/C/Math function/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

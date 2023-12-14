@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "i:/Codeo/Cursos/C/Average",
-      "program": "i:/Codeo/Cursos/C/Average/build/Debug/outDebug",
+      "cwd": "i:/Codeo/Cursos/C/Pointers",
+      "program": "i:/Codeo/Cursos/C/Pointers/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

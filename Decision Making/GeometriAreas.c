@@ -44,6 +44,11 @@ int main (void)
             printf("Invalid character.... Exiting");
             return 0;
         }
+        if(radius<0)
+        {
+            printf("Input Error it can't be a negative value \n");
+            return 0;
+        }
         area = PI * pow(radius,2);
         printf("Area of circle is: %lf \n",area);
     }break;
@@ -60,6 +65,11 @@ int main (void)
         if(scanf("%lf",&height) == 0)
         {
             printf("Invalid character.... Exiting");
+            return 0;
+        }
+        if ((base<0)||(height<0))
+        {
+            printf("Input Error it can't be a negative value \n");
             return 0;
         }
         area = (base*height)/2;
@@ -86,6 +96,11 @@ int main (void)
             printf("Invalid character.... Exiting");
             return 0;
         }
+        if ((a<0)||(h<0)||(b<0))
+        {
+            printf("Input Error it can't be a negative value \n");
+            return 0;
+        }
         area = ((a+b)/2)*h;
         printf("Area of triangle is: %lf \n",area);
     }break;
@@ -98,7 +113,11 @@ int main (void)
             printf("Invalid character.... Exiting");
             return 0;
         }
-
+        if (side<0)
+        {
+            printf("Input Error it can't be a negative value \n");
+            return 0;
+        }
         area = pow(side,2);
          printf("Area of square is: %lf \n",area);
     }break;
@@ -115,6 +134,11 @@ int main (void)
         if(scanf("%lf",&width) == 0)
         {
             printf("Invalid character.... Exiting");
+            return 0;
+        }
+        if ((length<0)||(width<0))
+        {
+            printf("Input Error it can't be a negative value \n");
             return 0;
         }
         area = length*width;

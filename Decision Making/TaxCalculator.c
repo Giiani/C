@@ -23,6 +23,13 @@ int main (void)
         return 0;
     }
 
+    if (Income<0)
+    {
+        printf("Expecting values greather than 0 \n");
+        return 0;
+    }
+    
+    /* Calculate the tax based on the income */
     if(Income <= 9525)
     {
         tax_rate = 0;

@@ -3,23 +3,44 @@
 
 int main (void)
 {
-    int number1 = 0;
-    int number2 = 0;
+    float number1 = 0;
+    float number2 = 0;
 
     printf("Enter first number (integer): ");
-    scanf("%d", &number1);
-    printf("Enter second number (integer):");
-    scanf("%d", &number2);
+    
+    if(scanf("%f", &number1) == 0)
+    {
+        printf("Invalid Input! Exiting...");
+        return 0;
+    }
 
-    if (number1>number2)
+    printf("Enter second number (integer):");
+    
+    if(scanf("%f", &number2) == 0)
     {
-        printf("%d is bigger \n",number1);
+        printf("Invalid Input! Exiting...");
+        return 0;
     }
-    else if(number2>number1)
+
+    int32_t n1,n2;
+
+    n1 = number1;
+    n2 = number2;
+
+    if ((n1!=number1) || (n2!=number2))
     {
-        printf("%d is bigger\n",number2);
+        printf("Warning only comparing the integer part \n");
     }
-    else if(number1==number2)
+
+    if (n1>n2)
+    {
+        printf("%d is bigger \n",n1);
+    }
+    else if(n2>n1)
+    {
+        printf("%d is bigger\n",n2);
+    }
+    else if(n1==n2)
     {
         printf("Both numbers are equal \n");
     }
